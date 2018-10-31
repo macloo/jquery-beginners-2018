@@ -1,0 +1,48 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Verdana', sans-serif;
+  color: #333;
+  background: #fff9ef;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p {
+  line-height: 1.4;
+}
+
+/* classes */
+.wrapper {
+    max-width: 800px;
+    border: 1px solid #999;
+    margin: 2rem auto;
+    padding: 2rem 3rem;
+}
+
+/* links */
+a {
+  color: #237b93;
+  text-decoration: underline;
+}
+a:hover {
+  color: #d332cb;
+  text-decoration: none;
+}
+
+/* media queries */
+@media (max-width: 760px) {
+
+}
