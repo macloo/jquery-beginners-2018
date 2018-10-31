@@ -2,6 +2,9 @@ html {
     font-size: 100%;
     box-sizing: border-box;
 }
+* {
+    box-sizing: inherit;
+}
 body {
   font-family: 'Verdana', sans-serif;
   color: #333;
@@ -21,15 +24,84 @@ h2 {
   font-size: 1.5rem;
 }
 p {
-  line-height: 1.4;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 /* classes */
 .wrapper {
     max-width: 800px;
-    border: 1px solid #999;
+    border: 1px solid #ccc;
     margin: 2rem auto;
     padding: 2rem 3rem;
+}
+/* contains 3 divs styled as buttons */
+.buttons {
+    display: flex;
+    margin: 1rem 0;
+}
+/* it's hard to style actual button elements, so these are divs */
+.butt {
+    background: #ffb53f;
+    color: #f7f4ef;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0.1em 0.1em 0.1em #8c5401;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: inline-block; /* not block */
+    flex: 1 1 0; /* all buttons, same width */
+}
+.butt:hover {
+    text-shadow: -0.1em -0.1em 0.1em #8c5401;
+    background: #ed991c;
+}
+.butt:active, .butt:focus {
+    text-shadow: -0.1em -0.1em 0.1em #8c5401;
+    background: #fc9402 ;
+}
+.middle {
+    margin: 0 1rem;
+}
+.target {
+    background: #998463;
+    height: 6rem;
+}
+.area {
+    position: relative;
+    background: #ffb53f;
+    height: 12rem;
+    margin-bottom: 2rem;
+}
+.area p {
+    margin: 0;
+    padding: 1rem 2rem;
+}
+.moving {
+    margin-bottom: 0;
+}
+.square {
+    background: #998463;
+    height: 6em;
+    width: 6em;
+    z-index: 1;
+}
+.square1, .square2, .square3 {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+}
+.reset-square {
+    display: inline-block;
+    background: #237b93;
+    color: #f7f4ef;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.extra-top-padding {
+    padding-top: 2rem;
 }
 
 /* links */
@@ -38,11 +110,19 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #d332cb;
+  color: #fc9402;
   text-decoration: none;
 }
 
 /* media queries */
-@media (max-width: 760px) {
-
+@media (max-width: 860px) {
+    .wrapper {
+        border: none;
+    }
+}
+@media (max-width: 650px) {
+    .wrapper {
+        margin: 0;
+        padding: 1rem;
+    }
 }
