@@ -2,13 +2,13 @@
 
 Introducing jQuery to beginners can be less intimidating if we focus on some of the things that jQuery can do with only a tiny amount of code. “Write less. Do more.” &mdash; that’s the jQuery motto.
 
-[index.html](https://macloo.github.io/jquery-beginners-2018/)
+[index.html](https://macloo.github.io/jquery-beginners-2018/) &larr; **live page**
 
 jQuery effects are the first fun thing to learn. Try the buttons here to see these three effects: hide, slide, fade.
 
-Based on module 2, “Learn jQuery: Effects,” in the Codecademy course [Learn jQuery](https://www.codecademy.com/courses/learn-jquery/).
+Based on module 2, “Learn jQuery: Effects,” in the Codecademy course [Introduction to jQuery](https://www.codecademy.com/courses/learn-jquery/).
 
-[mousing.html](https://macloo.github.io/jquery-beginners-2018/mousing.html)
+[mousing.html](https://macloo.github.io/jquery-beginners-2018/mousing.html) &larr; **live page**
 
 jQuery can be used to make things happen as a result of mouse actions, including movement and mouse button clicks. On the previous page, all the jQuery events were click events. On this page, they are all mouse events.
 
